@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bless.Booking.Service", "Bless.Booking.Service\Bless.Booking.Service.csproj", "{B3797067-2E34-42DA-9C65-A325088B585B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bless.Models", "Bless.Models\Bless.Models.csproj", "{BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bless.DataAccess.Interfaces", "Bless.DataAccess.Interfaces\Bless.DataAccess.Interfaces.csproj", "{512EAFF7-7DAF-46E4-943E-BB15B52E7BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bless.DataAccess", "Bless.DataAccess\Bless.DataAccess.csproj", "{13D227BF-87A6-45CD-BEF3-D6C05B1A83C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bless.BusinessLogic", "Bless.BusinessLogic\Bless.BusinessLogic.csproj", "{5914A5B1-34ED-4A44-8FB9-2ABCF5150A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bless.BusinessLogic.Interfaces", "Bless.BusinessLogic.Interfaces\Bless.BusinessLogic.Interfaces.csproj", "{679373D7-3418-4314-BBC8-2D0BEF1D5D41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3797067-2E34-42DA-9C65-A325088B585B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3797067-2E34-42DA-9C65-A325088B585B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3797067-2E34-42DA-9C65-A325088B585B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3797067-2E34-42DA-9C65-A325088B585B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512EAFF7-7DAF-46E4-943E-BB15B52E7BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512EAFF7-7DAF-46E4-943E-BB15B52E7BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512EAFF7-7DAF-46E4-943E-BB15B52E7BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512EAFF7-7DAF-46E4-943E-BB15B52E7BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D227BF-87A6-45CD-BEF3-D6C05B1A83C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D227BF-87A6-45CD-BEF3-D6C05B1A83C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D227BF-87A6-45CD-BEF3-D6C05B1A83C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D227BF-87A6-45CD-BEF3-D6C05B1A83C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5914A5B1-34ED-4A44-8FB9-2ABCF5150A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5914A5B1-34ED-4A44-8FB9-2ABCF5150A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5914A5B1-34ED-4A44-8FB9-2ABCF5150A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5914A5B1-34ED-4A44-8FB9-2ABCF5150A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679373D7-3418-4314-BBC8-2D0BEF1D5D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679373D7-3418-4314-BBC8-2D0BEF1D5D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679373D7-3418-4314-BBC8-2D0BEF1D5D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679373D7-3418-4314-BBC8-2D0BEF1D5D41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {494324EF-1BD8-4070-8FF6-43D54A91217B}
+	EndGlobalSection
+EndGlobal
