@@ -88,6 +88,56 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Bless.BusinessLogic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Bless.BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bless.BusinessLogic.dll": {}
+        }
+      },
+      "Bless.BusinessLogic.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Bless.BusinessLogic.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bless.BusinessLogic.Interfaces.dll": {}
+        }
+      },
+      "Bless.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Bless.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bless.DataAccess.dll": {}
+        }
+      },
+      "Bless.DataAccess.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Bless.DataAccess.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bless.DataAccess.Interfaces.dll": {}
+        }
+      },
+      "Bless.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Bless.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bless.Models.dll": {}
+        }
       }
     }
   },
@@ -439,10 +489,40 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Bless.BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../Bless.BusinessLogic/Bless.BusinessLogic.csproj",
+      "msbuildProject": "../Bless.BusinessLogic/Bless.BusinessLogic.csproj"
+    },
+    "Bless.BusinessLogic.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Bless.BusinessLogic.Interfaces/Bless.BusinessLogic.Interfaces.csproj",
+      "msbuildProject": "../Bless.BusinessLogic.Interfaces/Bless.BusinessLogic.Interfaces.csproj"
+    },
+    "Bless.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Bless.DataAccess/Bless.DataAccess.csproj",
+      "msbuildProject": "../Bless.DataAccess/Bless.DataAccess.csproj"
+    },
+    "Bless.DataAccess.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Bless.DataAccess.Interfaces/Bless.DataAccess.Interfaces.csproj",
+      "msbuildProject": "../Bless.DataAccess.Interfaces/Bless.DataAccess.Interfaces.csproj"
+    },
+    "Bless.Models/1.0.0": {
+      "type": "project",
+      "path": "../Bless.Models/Bless.Models.csproj",
+      "msbuildProject": "../Bless.Models/Bless.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Bless.BusinessLogic >= 1.0.0",
+      "Bless.BusinessLogic.Interfaces >= 1.0.0",
+      "Bless.DataAccess >= 1.0.0",
+      "Bless.DataAccess.Interfaces >= 1.0.0",
+      "Bless.Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -478,7 +558,23 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\Bless.BusinessLogic.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\Bless.BusinessLogic.Interfaces.csproj"
+            },
+            "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\Bless.BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\Bless.BusinessLogic.csproj"
+            },
+            "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\Bless.DataAccess.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\Bless.DataAccess.Interfaces.csproj"
+            },
+            "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\Bless.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\Bless.DataAccess.csproj"
+            },
+            "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Bless.Models.csproj": {
+              "projectPath": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Bless.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

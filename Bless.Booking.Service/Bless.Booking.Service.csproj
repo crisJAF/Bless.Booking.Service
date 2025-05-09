@@ -10,4 +10,12 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bless.BusinessLogic.Interfaces\Bless.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\Bless.BusinessLogic\Bless.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Bless.DataAccess.Interfaces\Bless.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\Bless.DataAccess\Bless.DataAccess.csproj" />
+    <ProjectReference Include="..\Bless.Models\Bless.Models.csproj" />
+  </ItemGroup>
+
 </Project>
