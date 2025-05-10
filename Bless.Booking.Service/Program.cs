@@ -11,6 +11,16 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpClient<GooglePlacesService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PermitirCORS", policy =>
+    {
+        policy.WithOrigins("https://localhost:7280") // URL del cliente Blazor
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
