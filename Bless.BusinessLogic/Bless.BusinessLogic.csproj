@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bless.BusinessLogic.Interfaces\Bless.BusinessLogic.Interfaces.csproj" />
+    <ProjectReference Include="..\Bless.DataAccess.Interfaces\Bless.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\Bless.Models\Bless.Models.csproj" />
+  </ItemGroup>
+
 </Project>
