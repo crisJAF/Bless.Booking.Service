@@ -15,6 +15,10 @@ builder.Services.AddHttpClient<GooglePlacesService>();
 builder.Services.AddSingleton<IReserva, Reserva>();
 builder.Services.AddSingleton<Bless.DataAccess.Interfaces.IReserva, Bless.DataAccess.Reserva>();
 builder.Services.AddSingleton<Bless.DataAccess.Interfaces.IConnectionManager, Bless.DataAccess.ConnectionManager>();
+builder.Services.AddSingleton<IBarbero, Barbero>();
+builder.Services.AddSingleton<Bless.DataAccess.Interfaces.IBarbero, Bless.DataAccess.Barbero>();
+builder.Services.AddSingleton<IServicio, Servicio>();
+builder.Services.AddSingleton<Bless.DataAccess.Interfaces.IServicio, Bless.DataAccess.Servicio>();
 
 builder.Services.AddCors(options =>
 {
