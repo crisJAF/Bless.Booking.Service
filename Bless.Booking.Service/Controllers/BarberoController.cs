@@ -16,11 +16,18 @@ namespace Bless.Booking.Service.Controllers
         [HttpGet("listar")]
         public async Task<IActionResult> ListarBarberos()
         {
-            var result = await _barberoService.ListarBarberosAsync();
-            if (result.IsSuccess)
-                return Ok(result);
-            else
-                return BadRequest(result);
+            try
+            {
+                var result = await _barberoService.ListarBarberosAsync();
+                if (result.IsSuccess)
+                    return Ok(result);
+                else
+                    return BadRequest(result);
+
+            } catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+            }
         }
     }
 }

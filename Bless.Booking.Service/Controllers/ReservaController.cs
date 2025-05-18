@@ -19,22 +19,37 @@ namespace Bless.Booking.Service.Controllers
         [HttpPost("guardar")]
         public async Task<IActionResult> GuardarReserva([FromBody] ReservaRequest request)
         {
-            var result = await _reservaService.GuardarReservaAsync(request);
-            if (result.IsSuccess)
-                return Ok(result);
-            else
-                return BadRequest(result);
+            try
+            {
+                var result = await _reservaService.GuardarReservaAsync(request);
+                if (result.IsSuccess)
+                    return Ok(result);
+                else
+                    return BadRequest(result);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+            }
         }
 
         // GET: api/reservas/horarios?barberoId=1&fecha=2025-05-11
         [HttpGet("horarios")]
         public async Task<IActionResult> ListarHorariosDisponibles(int barberoId, DateTime fecha)
         {
-            var result = await _reservaService.ListarHorariosDisponiblesAsync(barberoId, fecha);
-            if (result.IsSuccess)
-                return Ok(result);
-            else
-                return BadRequest(result);
+            try
+            {
+                var result = await _reservaService.ListarHorariosDisponiblesAsync(barberoId, fecha);
+                if (result.IsSuccess)
+                    return Ok(result);
+                else
+                    return BadRequest(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+            }
         }
     }
 }

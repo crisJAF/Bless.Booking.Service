@@ -29,9 +29,9 @@ namespace Bless.Booking.Service.Controllers
 
                 return Ok(reviews);
             }
-            catch (System.Exception)
+            catch (Exception ex)
             {
-                return StatusCode(500, "Error al obtener los reviews.");
+                return StatusCode(500, ex.Message);
             }
         }
     }
