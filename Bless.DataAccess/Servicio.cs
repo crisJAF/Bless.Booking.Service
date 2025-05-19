@@ -21,7 +21,7 @@ namespace Bless.DataAccess
         {
             using var connection = connectionManager.GetConnectionString(ConnectionManager.connectionStringKey);
             var result = await connection.QueryAsync<Models.Servicio>(
-                "sp_ServicioListar",
+                "sp_Servicio_Listar",
                 commandType: CommandType.StoredProcedure
             );
             return new Response<List<Models.Servicio>> { Content = result.ToList(), IsSuccess = true, Message = "Servicios encontrados correctamente." };
