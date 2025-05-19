@@ -1,0 +1,37 @@
+[
+  {
+    "Interface": "Bless.BusinessLogic.Interfaces.IReserva",
+    "Implementation": "Bless.BusinessLogic.Reserva",
+    "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.DataAccess.Interfaces.IReserva",
+    "Implementation": "Bless.DataAccess.Reserva",
+    "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.DataAccess.Interfaces.IConnectionManager",
+    "Implementation": "Bless.DataAccess.ConnectionManager",
+    "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.BusinessLogic.Interfaces.IBarbero",
+    "Implementation": "Bless.BusinessLogic.Barbero",
+    "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.DataAccess.Interfaces.IBarbero",
+    "Implementation": "Bless.DataAccess.Barbero",
+    "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.BusinessLogic.Interfaces.IServicio",
+    "Implementation": "Bless.BusinessLogic.Servicio",
+    "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.DataAccess.Interfaces.IServicio",
+    "Implementation": "Bless.DataAccess.Servicio",
+    "Lifetime": "Singleton"
+  }
+]

@@ -17,7 +17,7 @@ namespace Bless.DataAccess
         {
             using var connection = connectionManager.GetConnectionString(ConnectionManager.connectionStringKey);
             var result = await connection.QueryAsync<Models.Barbero>(
-                "sp_BarberoListar",
+                "sp_Barbero_Listar",
                 commandType: CommandType.StoredProcedure
             );
 

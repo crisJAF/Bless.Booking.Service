@@ -8,7 +8,7 @@ namespace Bless.Models
 {
     public class HorarioDisponible
     {
-        public int HorarioId { get; set; }
-        public TimeSpan Hora { get; set; }
+        public TimeSpan HoraDesde { get; set; }
+        public TimeSpan HoraHasta { get; set; }
     }
 }
