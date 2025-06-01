@@ -33,5 +33,15 @@
     "Interface": "Bless.DataAccess.Interfaces.IServicio",
     "Implementation": "Bless.DataAccess.Servicio",
     "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.BusinessLogic.Interfaces.IUsuario",
+    "Implementation": "Bless.BusinessLogic.Usuario",
+    "Lifetime": "Singleton"
+  },
+  {
+    "Interface": "Bless.DataAccess.Interfaces.IUsuario",
+    "Implementation": "Bless.DataAccess.Usuario",
+    "Lifetime": "Singleton"
   }
 ]
