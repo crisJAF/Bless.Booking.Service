@@ -53,5 +53,23 @@ namespace Bless.DataAccess
                 Message = "Horarios disponibles obtenidos correctamente."
             };
         }
+
+        public async Task<Response<List<Models.Reserva>>> ListarReservasAsync(DateTime fecha, int barberoId)
+        {
+            using var connection = connectionManager.GetConnectionString(ConnectionManager.connectionStringKey);
+
+            var result = await connection.QueryAsync<Models.Reserva>(
+                "sp_ObtenerReservasPorFecha",
+                param: new { Fecha = fecha.Date, BarberoId = barberoId == 0 ? (int?)null : barberoId},
+                commandType: CommandType.StoredProcedure
+            );
+
+            return new Response<List<Models.Reserva>>
+            {
+                Content = result.ToList(),
+                IsSuccess = true,
+                Message = "Reservas Obtenidas correctamente"
+            };
+        }
     }
 }
