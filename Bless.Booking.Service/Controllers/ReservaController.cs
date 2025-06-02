@@ -58,23 +58,5 @@ namespace Bless.Booking.Service.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex);
             }
         }
-
-        // GET: api/reservas/listar?fecha=2025-05-11&barberoId=1
-        [HttpGet("listar")]
-        public async Task<IActionResult> ListarReservas(DateTime fecha, int barberoId)
-        {
-            try
-            {
-                var result = await _reservaService.ListarReservasAsync(fecha, barberoId);
-                if (result.IsSuccess)
-                    return Ok(result);
-                else
-                    return BadRequest(result);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
-            }
-        }
     }
 }

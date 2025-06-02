@@ -21,9 +21,5 @@ namespace Bless.BusinessLogic
         {
             return await _reserva.ListarHorariosDisponiblesAsync(barberoId, fecha);
         }
-        public async Task<Response<List<Models.Reserva>>> ListarReservasAsync(DateTime fecha, int barberoId)
-        {
-            return await _reserva.ListarReservasAsync(fecha, barberoId);
-        }
     }
 }
