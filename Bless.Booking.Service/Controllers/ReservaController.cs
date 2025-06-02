@@ -1,4 +1,5 @@
-﻿using Bless.BusinessLogic.Interfaces;
+﻿using Bless.BusinessLogic;
+using Bless.BusinessLogic.Interfaces;
 using Bless.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,10 +10,12 @@ namespace Bless.Booking.Service.Controllers
     public class ReservasController : ControllerBase
     {
         private readonly IReserva _reservaService;
+        private readonly NotificacionService _notificacionService;
 
-        public ReservasController(IReserva reservaService)
+        public ReservasController(IReserva reservaService, NotificacionService notificacionService)
         {
             this._reservaService = reservaService;
+            _notificacionService = notificacionService;
         }
 
         // POST: api/reservas/guardar
@@ -23,7 +26,11 @@ namespace Bless.Booking.Service.Controllers
             {
                 var result = await _reservaService.GuardarReservaAsync(request);
                 if (result.IsSuccess)
+                {
+                    // Llama directamente al servicio de notificaciones
+                    await _notificacionService.EnviarNotificacionAsync("Se ha realizado una nueva reserva");
                     return Ok(result);
+                }
                 else
                     return BadRequest(result);
 

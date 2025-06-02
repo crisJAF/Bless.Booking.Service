@@ -16,6 +16,10 @@ builder.Services.AddHttpClient<GooglePlacesService>();
 
 builder.Services.AddConfigServices();
 
+// Añadir servicios de SignalR
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<NotificacionService>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("PermitirCORS", policy =>
@@ -40,5 +44,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapHub<NotificacionHub>("/hub/notificaciones"); // Ruta del Hub
 
 app.Run();

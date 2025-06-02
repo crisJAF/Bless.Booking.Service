@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Bless.BusinessLogic.Interfaces;
+using Bless.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Bless.Booking.Service.Controllers
 {
@@ -6,22 +8,41 @@ namespace Bless.Booking.Service.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginRequest request)
-        {
-            if (request.Email == "admin@bless.com" && request.Password == "admin123")
-            {
-                // Opcional: puedes retornar un token JWT aquí
-                return Ok(new { success = true, message = "Login exitoso" });
-            }
+        private readonly IUsuario _usuario;
 
-            return Unauthorized(new { success = false, message = "Credenciales inválidas" });
+        public AuthController(IUsuario usuario)
+        {
+            this._usuario = usuario;
         }
 
-        public class LoginRequest
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            public string Email { get; set; }
-            public string Password { get; set; }
+            try
+            {
+                var result = await _usuario.LoginAsync(request);
+                return result.IsSuccess ? Ok(result.Content) : Unauthorized(result.Message);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] Usuario nuevoUsuario)
+        {
+            try
+            {
+                var result = await _usuario.RegistrarAsync(nuevoUsuario);
+                return result.IsSuccess ? Ok(result.Message) : BadRequest(result.Message);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
     }
 }
