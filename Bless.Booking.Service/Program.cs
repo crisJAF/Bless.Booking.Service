@@ -22,15 +22,20 @@ builder.Services.AddSingleton<NotificacionService>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("PermitirCORS", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("https://localhost:7280") // URL del cliente Blazor
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        policy
+            .WithOrigins("https://localhost:7228")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials(); // importante si usas cookies o auth
     });
 });
 
 var app = builder.Build();
+
+// Habilita CORS ANTES de usar routing o endpoints
+app.UseCors("AllowFrontend");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
