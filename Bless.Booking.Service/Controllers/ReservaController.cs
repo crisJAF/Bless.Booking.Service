@@ -1,4 +1,4 @@
-﻿using Bless.BusinessLogic;
+using Bless.BusinessLogic;
 using Bless.BusinessLogic.Interfaces;
 using Bless.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -55,7 +55,11 @@ namespace Bless.Booking.Service.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    IsSuccess = false,
+                    Message = ex.Message
+                });
             }
         }
         // GET: api/reservas/listar?fecha=2025-05-11&barberoId=1
@@ -72,7 +76,11 @@ namespace Bless.Booking.Service.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    IsSuccess = false,
+                    Message = ex.Message
+                });
             }
         }
     }

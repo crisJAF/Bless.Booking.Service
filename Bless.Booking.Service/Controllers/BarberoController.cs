@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Bless.Booking.Service.Controllers
 {
@@ -26,7 +26,11 @@ namespace Bless.Booking.Service.Controllers
 
             } catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    IsSuccess = false,
+                    Message = ex.Message
+                });
             }
         }
     }
