@@ -21,17 +21,15 @@ namespace Bless.Booking.Service.Controllers
             try
             {
                 var reviews = await _googlePlacesService.GetReviewsAsync();
-
-                if (reviews == null || reviews.Count == 0)
-                {
-                    return Ok(new { message = "No hay reseñas disponibles en este momento." });
-                }
-
-                return Ok(reviews);
+                return Ok(reviews ?? new List<Review>());
+            }
+            catch (InvalidOperationException ex)
+            {
+                return StatusCode(StatusCodes.Status502BadGateway, new { message = ex.Message });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = ex.Message });
             }
         }
     }

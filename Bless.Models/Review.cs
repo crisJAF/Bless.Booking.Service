@@ -10,16 +10,16 @@ namespace Bless.Models
     public class Review
     {
         [JsonPropertyName("author_name")]
-        public string AuthorName { get; set; }
+        public string AuthorName { get; set; } = string.Empty;
 
         [JsonPropertyName("profile_photo_url")]
-        public string ProfilePhotoUrl { get; set; } // URL de la foto del autor
+        public string ProfilePhotoUrl { get; set; } = string.Empty; // URL de la foto del autor
 
         [JsonPropertyName("rating")]
         public int Rating { get; set; } // Puntuación de la reseña (estrellas)
 
         [JsonPropertyName("text")]
-        public string Text { get; set; }
+        public string Text { get; set; } = string.Empty;
 
         [JsonPropertyName("time")]
         public long Time { get; set; }
@@ -30,13 +30,19 @@ namespace Bless.Models
 
     public class PlaceDetailsResponse
     {
+        [JsonPropertyName("status")]
+        public string Status { get; set; } = string.Empty;
+
+        [JsonPropertyName("error_message")]
+        public string ErrorMessage { get; set; } = string.Empty;
+
         [JsonPropertyName("result")]
-        public Result Result { get; set; }
+        public Result Result { get; set; } = new();
     }
 
     public class Result
     {
         [JsonPropertyName("reviews")]
-        public List<Review> Reviews { get; set; }
+        public List<Review> Reviews { get; set; } = new();
     }
 }
