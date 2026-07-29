@@ -1,0 +1,1 @@
+’R„C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.BusinessLogic.Interfaces\Bless.BusinessLogic.Interfaces.csprojòCSharp12

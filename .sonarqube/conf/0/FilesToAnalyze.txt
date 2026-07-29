@@ -1,0 +1,10 @@
+﻿C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\Barbero.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\HorarioDisponible.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\LoginRequest.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\LoginResponse.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\Reserva.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\ReservaRequest.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\Response.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\Review.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\Servicio.cs
+C:\Users\Cristopher Avendano\source\repos\Bless.Booking.Service\Bless.Models\Usuario.cs

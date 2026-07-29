@@ -1,0 +1,296 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.2.1"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1781160380000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "bless-booking-api"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service"
+    },
+    {
+      "key": "sonar.sources",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.vs\\VSWorkspaceState.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.vs\\Bless.Booking.Service\\config\\applicationhost.config,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.vs\\Bless.Booking.Service\\v17\\DocumentLayout.backup.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.vs\\Bless.Booking.Service\\v17\\DocumentLayout.json"
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3,679373D7-3418-4314-BBC8-2D0BEF1D5D41,512EAFF7-7DAF-46E4-943E-BB15B52E7BC8,13D227BF-87A6-45CD-BEF3-D6C05B1A83C8,5914A5B1-34ED-4A44-8FB9-2ABCF5150A16,B3797067-2E34-42DA-9C65-A325088B585B"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.projectKey",
+      "value": "bless-booking-api:BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.projectName",
+      "value": "Bless.Models"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.projectBaseDir",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.working.directory",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.sources",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Barbero.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\HorarioDisponible.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\LoginRequest.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\LoginResponse.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Reserva.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\ReservaRequest.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Response.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Review.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Servicio.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\Usuario.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\obj\\Bless.Models.csproj.nuget.dgspec.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\obj\\project.assets.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\bin\\Debug\\net8.0\\Bless.Models.deps.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Models\\obj\\Debug\\net8.0\\Bless.Models.sourcelink.json"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\0"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\0\\Issues.json"
+    },
+    {
+      "key": "BD3DBA98-695F-4B9D-A61D-58EAFAA3AAA3.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\0\\Telemetry.json"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.projectKey",
+      "value": "bless-booking-api:679373D7-3418-4314-BBC8-2D0BEF1D5D41"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.projectName",
+      "value": "Bless.BusinessLogic.Interfaces"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.projectBaseDir",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.working.directory",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\.sonar\\mod1"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.sources",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\obj\\Bless.BusinessLogic.Interfaces.csproj.nuget.dgspec.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\obj\\project.assets.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\bin\\Debug\\net8.0\\Bless.BusinessLogic.Interfaces.deps.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\obj\\Debug\\net8.0\\Bless.BusinessLogic.Interfaces.sourcelink.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\IBarbero.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\IReserva.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\IServicio.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic.Interfaces\\IUsuario.cs"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\1"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\1\\Issues.json"
+    },
+    {
+      "key": "679373D7-3418-4314-BBC8-2D0BEF1D5D41.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\1\\Telemetry.json"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.projectKey",
+      "value": "bless-booking-api:512EAFF7-7DAF-46E4-943E-BB15B52E7BC8"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.projectName",
+      "value": "Bless.DataAccess.Interfaces"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.projectBaseDir",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.working.directory",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\.sonar\\mod2"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.sources",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\obj\\Bless.DataAccess.Interfaces.csproj.nuget.dgspec.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\obj\\project.assets.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\bin\\Debug\\net8.0\\Bless.DataAccess.Interfaces.deps.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\obj\\Debug\\net8.0\\Bless.DataAccess.Interfaces.sourcelink.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\IBarbero.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\IConnectionManager.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\IReserva.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\IServicio.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess.Interfaces\\IUsuario.cs"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\2"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\2\\Issues.json"
+    },
+    {
+      "key": "512EAFF7-7DAF-46E4-943E-BB15B52E7BC8.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\2\\Telemetry.json"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.projectKey",
+      "value": "bless-booking-api:13D227BF-87A6-45CD-BEF3-D6C05B1A83C8"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.projectName",
+      "value": "Bless.DataAccess"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.projectBaseDir",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.working.directory",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\.sonar\\mod3"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.sources",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\obj\\Bless.DataAccess.csproj.nuget.dgspec.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\obj\\project.assets.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\bin\\Debug\\net8.0\\Bless.DataAccess.deps.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\obj\\Debug\\net8.0\\Bless.DataAccess.sourcelink.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\Barbero.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\ConnectionManager.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\Reserva.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\Servicio.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.DataAccess\\Usuario.cs"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\3"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\3\\Issues.json"
+    },
+    {
+      "key": "13D227BF-87A6-45CD-BEF3-D6C05B1A83C8.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\3\\Telemetry.json"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.projectKey",
+      "value": "bless-booking-api:5914A5B1-34ED-4A44-8FB9-2ABCF5150A16"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.projectName",
+      "value": "Bless.BusinessLogic"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.projectBaseDir",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.working.directory",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\.sonar\\mod4"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.sources",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\obj\\Bless.BusinessLogic.csproj.nuget.dgspec.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\obj\\project.assets.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\bin\\Debug\\net8.0\\Bless.BusinessLogic.deps.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\obj\\Debug\\net8.0\\Bless.BusinessLogic.sourcelink.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\Barbero.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\NotificacionHub.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\NotificacionService.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\Reserva.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\Servicio.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.BusinessLogic\\Usuario.cs"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\4"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\4\\Issues.json"
+    },
+    {
+      "key": "5914A5B1-34ED-4A44-8FB9-2ABCF5150A16.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\4\\Telemetry.json"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.projectKey",
+      "value": "bless-booking-api:B3797067-2E34-42DA-9C65-A325088B585B"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.projectName",
+      "value": "Bless.Booking.Service"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.projectBaseDir",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.working.directory",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\.sonar\\mod5"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.sources",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\appsettings.Development.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\appsettings.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\services.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Bless.Booking.Service.csproj.nuget.dgspec.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\project.assets.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Properties\\launchSettings.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\bin\\Debug\\net8.0\\appsettings.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\bin\\Debug\\net8.0\\Bless.Booking.Service.deps.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\bin\\Debug\\net8.0\\Bless.Booking.Service.runtimeconfig.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\bin\\Debug\\net8.0\\Bless.Booking.Service.staticwebassets.endpoints.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\bin\\Debug\\net8.0\\services.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\ApiEndpoints.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\Bless.Booking.Service.sourcelink.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\staticwebassets.build.endpoints.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\EndpointInfo\\Bless.Booking.Service.json,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Controllers\\AuthController.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Controllers\\BarberoController.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Controllers\\GooglePlacesController.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Controllers\\NotificacionesController.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Controllers\\PushController.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Controllers\\ReservaController.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Controllers\\ServicioController.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\GooglePlacesService.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Program.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\Bless.Booking.Service.GlobalUsings.g.cs,\"C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\Bless.Booking.Service.AssemblyInfo.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\obj\\Debug\\net8.0\\Bless.Booking.Service.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\Bless.Booking.Service\\Bless.Booking.Service.http"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\5"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\5\\Issues.json"
+    },
+    {
+      "key": "B3797067-2E34-42DA-9C65-A325088B585B.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\Cristopher Avendano\\source\\repos\\Bless.Booking.Service\\.sonarqube\\out\\5\\Telemetry.json"
+    },
+    {
+      "key": "sonar.token",
+      "value": "***"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "http://localhost:9000"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    }
+  ]
+}
