@@ -7,6 +7,12 @@ using System.Net;
 var builder = WebApplication.CreateBuilder(args);
 const string CorsPolicyName = "AllowFrontend";
 
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddJsonFile("appsettings.Local.json", optional: true, reloadOnChange: true);
+    builder.Configuration.AddEnvironmentVariables();
+}
+
 builder.Logging.AddFilter("System.Net.Http.HttpClient.GooglePlacesService", LogLevel.Warning);
 
 // Add services to the container.
@@ -28,14 +34,14 @@ var allowedOrigins = builder.Configuration
     .GetSection("Cors:AllowedOrigins")
     .Get<string[]>() ?? Array.Empty<string>();
 var allowedOriginsSet = allowedOrigins.ToHashSet(StringComparer.OrdinalIgnoreCase);
-var isDevelopment = builder.Environment.IsDevelopment();
+var allowLocalDevelopmentOrigins = builder.Configuration.GetValue("Cors:AllowLocalDevelopmentOrigins", true);
 
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(CorsPolicyName, policy =>
     {
         policy
-            .SetIsOriginAllowed(origin => IsAllowedCorsOrigin(origin, allowedOriginsSet, isDevelopment))
+            .SetIsOriginAllowed(origin => IsAllowedCorsOrigin(origin, allowedOriginsSet, allowLocalDevelopmentOrigins))
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
@@ -60,20 +66,26 @@ app.UseCors(CorsPolicyName);
 
 app.UseAuthorization();
 
+app.MapGet("/health", () => Results.Ok(new
+{
+    status = "ok",
+    environment = app.Environment.EnvironmentName
+}));
+
 app.MapControllers();
 
 app.MapHub<NotificacionHub>("/hub/notificaciones");
 
 app.Run();
 
-static bool IsAllowedCorsOrigin(string origin, ISet<string> allowedOrigins, bool isDevelopment)
+static bool IsAllowedCorsOrigin(string origin, ISet<string> allowedOrigins, bool allowLocalDevelopmentOrigins)
 {
     if (allowedOrigins.Contains(origin))
     {
         return true;
     }
 
-    if (!isDevelopment || !Uri.TryCreate(origin, UriKind.Absolute, out var uri))
+    if (!allowLocalDevelopmentOrigins || !Uri.TryCreate(origin, UriKind.Absolute, out var uri))
     {
         return false;
     }
@@ -83,14 +95,15 @@ static bool IsAllowedCorsOrigin(string origin, ISet<string> allowedOrigins, bool
         return false;
     }
 
-    if (uri.Port is not 5173 and not 5174 and not 4173)
-    {
-        return false;
-    }
-
     return uri.Host.Equals("localhost", StringComparison.OrdinalIgnoreCase)
-        || uri.Host.Equals("::1", StringComparison.OrdinalIgnoreCase)
+        || uri.Host.Equals("0.0.0.0", StringComparison.OrdinalIgnoreCase)
+        || IsLoopbackAddress(uri.Host)
         || IsPrivateIpv4(uri.Host);
+}
+
+static bool IsLoopbackAddress(string host)
+{
+    return IPAddress.TryParse(host, out var address) && IPAddress.IsLoopback(address);
 }
 
 static bool IsPrivateIpv4(string host)

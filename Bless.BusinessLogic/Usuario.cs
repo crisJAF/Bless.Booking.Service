@@ -52,24 +52,41 @@ namespace Bless.BusinessLogic
 
         private string GenerarToken(Models.Usuario usuario)
         {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]));
+            var jwtKey = GetRequiredJwtSetting("Jwt:Key");
+            if (Encoding.UTF8.GetByteCount(jwtKey) < 32)
+            {
+                throw new InvalidOperationException("La configuracion Jwt:Key debe tener al menos 32 bytes.");
+            }
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var claims = new[]
             {
-            new Claim(ClaimTypes.Name, usuario.NombreUsuario),
-            new Claim(ClaimTypes.Role, usuario.Rol ?? "Usuario")
-        };
+                new Claim(ClaimTypes.Name, usuario.NombreUsuario),
+                new Claim(ClaimTypes.Role, usuario.Rol ?? "Usuario")
+            };
 
             var token = new JwtSecurityToken(
-                issuer: configuration["Jwt:Issuer"],
-                audience: configuration["Jwt:Audience"],
+                issuer: GetRequiredJwtSetting("Jwt:Issuer"),
+                audience: GetRequiredJwtSetting("Jwt:Audience"),
                 claims: claims,
                 expires: DateTime.UtcNow.AddHours(2),
                 signingCredentials: credentials
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        private string GetRequiredJwtSetting(string key)
+        {
+            var value = configuration[key];
+            if (string.IsNullOrWhiteSpace(value))
+            {
+                throw new InvalidOperationException($"La configuracion {key} es requerida.");
+            }
+
+            return value;
         }
     }
 }
