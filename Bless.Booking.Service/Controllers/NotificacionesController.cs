@@ -1,5 +1,4 @@
-﻿using Bless.BusinessLogic;
-using Microsoft.AspNetCore.Http;
+using Bless.BusinessLogic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bless.Booking.Service.Controllers
@@ -10,12 +9,15 @@ namespace Bless.Booking.Service.Controllers
     {
         private readonly NotificacionService _notificacionService;
 
-        public NotificacionService NotificacionService => _notificacionService;
+        public NotificacionesController(NotificacionService notificacionService)
+        {
+            _notificacionService = notificacionService;
+        }
 
         [HttpPost("enviarNotificacion")]
-        public async Task<IActionResult> EnviarNotificacion(string message)
+        public async Task<IActionResult> EnviarNotificacion([FromQuery] string message)
         {
-            //await NotificacionService.EnviarNotificacionAsync(message);
+            await _notificacionService.EnviarNotificacionAsync(message);
 
             return Ok();
         }
