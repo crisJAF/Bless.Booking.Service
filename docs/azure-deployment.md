@@ -29,7 +29,7 @@ SendGrid__FromName=Formulario de Contacto
 If the frontend is deployed to a public URL later, add it explicitly:
 
 ```text
-Cors__AllowedOrigins__0=https://<frontend-domain>
+Cors__AllowedOrigins__0=https://icy-river-0998dfe10.7.azurestaticapps.net
 ```
 
 After deployment, open:
