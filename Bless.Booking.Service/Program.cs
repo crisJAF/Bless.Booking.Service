@@ -33,7 +33,10 @@ builder.Services.AddSingleton<NotificacionService>();
 var allowedOrigins = builder.Configuration
     .GetSection("Cors:AllowedOrigins")
     .Get<string[]>() ?? Array.Empty<string>();
-var allowedOriginsSet = allowedOrigins.ToHashSet(StringComparer.OrdinalIgnoreCase);
+var allowedOriginsSet = allowedOrigins
+    .Select(NormalizeCorsOrigin)
+    .Where(origin => !string.IsNullOrWhiteSpace(origin))
+    .ToHashSet(StringComparer.OrdinalIgnoreCase);
 var allowLocalDevelopmentOrigins = builder.Configuration.GetValue("Cors:AllowLocalDevelopmentOrigins", true);
 
 builder.Services.AddCors(options =>
@@ -80,7 +83,7 @@ app.Run();
 
 static bool IsAllowedCorsOrigin(string origin, ISet<string> allowedOrigins, bool allowLocalDevelopmentOrigins)
 {
-    if (allowedOrigins.Contains(origin))
+    if (allowedOrigins.Contains(NormalizeCorsOrigin(origin)))
     {
         return true;
     }
@@ -99,6 +102,11 @@ static bool IsAllowedCorsOrigin(string origin, ISet<string> allowedOrigins, bool
         || uri.Host.Equals("0.0.0.0", StringComparison.OrdinalIgnoreCase)
         || IsLoopbackAddress(uri.Host)
         || IsPrivateIpv4(uri.Host);
+}
+
+static string NormalizeCorsOrigin(string origin)
+{
+    return origin.Trim().TrimEnd('/');
 }
 
 static bool IsLoopbackAddress(string host)
